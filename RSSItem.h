@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RSSItem : NSObject
+@interface RSSItem : NSObject <NSXMLParserDelegate>
+
+{
+    NSMutableString *currentString;
+}
+
+@property (nonatomic, weak) id parentParserDelegate;
+
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *link;
+@property (nonatomic, strong) NSString *author;
+@property (nonatomic, strong) NSString *category;
 
 @end

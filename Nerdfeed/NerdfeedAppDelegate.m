@@ -7,6 +7,8 @@
 //
 
 #import "NerdfeedAppDelegate.h"
+#import "ListViewController.h"
+#import "WebViewController.h"
 
 @implementation NerdfeedAppDelegate
 
@@ -14,6 +16,15 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    ListViewController *lvc = [[ListViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *masterNav = [[UINavigationController alloc]
+                                         initWithRootViewController:lvc];
+    
+    WebViewController *wvc = [[WebViewController alloc] init];
+    [lvc setWebViewController:wvc];
+    
+    [[self window] setRootViewController:masterNav];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

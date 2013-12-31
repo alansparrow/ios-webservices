@@ -19,6 +19,12 @@
 		D8196A34187260F400F241DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8196A1C187260F300F241DC /* UIKit.framework */; };
 		D8196A3C187260F400F241DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8196A3A187260F400F241DC /* InfoPlist.strings */; };
 		D8196A3E187260F400F241DC /* NerdfeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8196A3D187260F400F241DC /* NerdfeedTests.m */; };
+		D8196A491872611A00F241DC /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8196A481872611A00F241DC /* ListViewController.m */; };
+		D8196A4C187271E600F241DC /* RSSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D8196A4B187271E600F241DC /* RSSItem.m */; };
+		D8196A4F1872720D00F241DC /* RSSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8196A4E1872720D00F241DC /* RSSChannel.m */; };
+		D8196A521872824B00F241DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8196A511872824B00F241DC /* WebViewController.m */; };
+		D8196A5518728B6800F241DC /* RSSItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8196A5418728B6800F241DC /* RSSItemViewCell.m */; };
+		D8196A5718728BC400F241DC /* RSSItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8196A5618728BC400F241DC /* RSSItemViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,17 @@
 		D8196A39187260F400F241DC /* NerdfeedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NerdfeedTests-Info.plist"; sourceTree = "<group>"; };
 		D8196A3B187260F400F241DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8196A3D187260F400F241DC /* NerdfeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdfeedTests.m; sourceTree = "<group>"; };
+		D8196A471872611A00F241DC /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		D8196A481872611A00F241DC /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		D8196A4A187271E600F241DC /* RSSItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSItem.h; sourceTree = "<group>"; };
+		D8196A4B187271E600F241DC /* RSSItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSItem.m; sourceTree = "<group>"; };
+		D8196A4D1872720D00F241DC /* RSSChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSChannel.h; sourceTree = "<group>"; };
+		D8196A4E1872720D00F241DC /* RSSChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSChannel.m; sourceTree = "<group>"; };
+		D8196A501872824B00F241DC /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		D8196A511872824B00F241DC /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		D8196A5318728B6800F241DC /* RSSItemViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSItemViewCell.h; sourceTree = "<group>"; };
+		D8196A5418728B6800F241DC /* RSSItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSItemViewCell.m; sourceTree = "<group>"; };
+		D8196A5618728BC400F241DC /* RSSItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSSItemViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +94,17 @@
 		D8196A0C187260F300F241DC = {
 			isa = PBXGroup;
 			children = (
+				D8196A471872611A00F241DC /* ListViewController.h */,
+				D8196A481872611A00F241DC /* ListViewController.m */,
+				D8196A4A187271E600F241DC /* RSSItem.h */,
+				D8196A4B187271E600F241DC /* RSSItem.m */,
+				D8196A4D1872720D00F241DC /* RSSChannel.h */,
+				D8196A4E1872720D00F241DC /* RSSChannel.m */,
+				D8196A501872824B00F241DC /* WebViewController.h */,
+				D8196A511872824B00F241DC /* WebViewController.m */,
+				D8196A5318728B6800F241DC /* RSSItemViewCell.h */,
+				D8196A5418728B6800F241DC /* RSSItemViewCell.m */,
+				D8196A5618728BC400F241DC /* RSSItemViewCell.xib */,
 				D8196A1E187260F300F241DC /* Nerdfeed */,
 				D8196A37187260F400F241DC /* NerdfeedTests */,
 				D8196A17187260F300F241DC /* Frameworks */,
@@ -221,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8196A23187260F300F241DC /* InfoPlist.strings in Resources */,
+				D8196A5718728BC400F241DC /* RSSItemViewCell.xib in Resources */,
 				D8196A2B187260F300F241DC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8196A25187260F300F241DC /* main.m in Sources */,
+				D8196A5518728B6800F241DC /* RSSItemViewCell.m in Sources */,
+				D8196A521872824B00F241DC /* WebViewController.m in Sources */,
 				D8196A29187260F300F241DC /* NerdfeedAppDelegate.m in Sources */,
+				D8196A491872611A00F241DC /* ListViewController.m in Sources */,
+				D8196A4C187271E600F241DC /* RSSItem.m in Sources */,
+				D8196A4F1872720D00F241DC /* RSSChannel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +400,7 @@
 				GCC_PREFIX_HEADER = "Nerdfeed/Nerdfeed-Prefix.pch";
 				INFOPLIST_FILE = "Nerdfeed/Nerdfeed-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -379,6 +414,7 @@
 				GCC_PREFIX_HEADER = "Nerdfeed/Nerdfeed-Prefix.pch";
 				INFOPLIST_FILE = "Nerdfeed/Nerdfeed-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

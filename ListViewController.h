@@ -8,6 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ListViewController : NSObject
+// a forward declaration; we'll import the header in the .m
+@class RSSChannel;
+@class WebViewController;
+
+@interface ListViewController : UITableViewController <NSURLConnectionDataDelegate,
+NSXMLParserDelegate>
+
+{
+    NSURLConnection *connection;
+    NSMutableData *xmlData;
+    
+    RSSChannel *channel;
+}
+
+@property (nonatomic, strong) WebViewController *webViewController;
+
+- (void)fetchEntries;
 
 @end
