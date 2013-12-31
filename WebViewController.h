@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebViewController : UIViewController
+@interface WebViewController : UIViewController <UIWebViewDelegate>
+
+{
+    UIBarButtonItem *forwardBtn;
+    UIBarButtonItem *backBtn;
+}
 
 @property (nonatomic, readonly) UIWebView *webView;
 
